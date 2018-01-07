@@ -1,0 +1,57 @@
+.btn {
+    display: inline-block;
+    padding: 0 44px;
+    min-height: 50px;
+    border-radius: 25px;
+    font-family: $main-font-face;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    line-height: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+    @extend .btn;
+    background-color: $main-color;
+    color: $secondary-color;
+}
+
+.alternative-btn {
+    @extend .btn;
+    background-color: $secondary-color;
+    color: $main-color;
+}
+
+.paginator {
+    margin: 0 0 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+
+        li {
+            float: left;
+            margin-right: 5px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            a {
+                display: block;
+                width: 35px;
+                height: 35px;
+                font-size: 24px;
+                line-height: 35px;
+                text-align: center;
+                color: $main-color;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.concert-info {
+    margin-bottom: 31px;
+    font-family: $main-font-face;
+    color: $third-color;
+    font-size: 16px;
+
+    td {
+        padding-bottom: 10px;
+
+        &:first-child {
+            width: 70px;
+            text-transform: capitalize;
+        }
+
+        &:first-child::before {
+            content: ':';
+            float: right;
+        }
+
+        &:first-child::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        &:last-child {
+            padding-left: 18px;
+        }
+    }
+
+    tr:last-child {
+        td {
+            padding-bottom: 0;
+        }
+    }
+}

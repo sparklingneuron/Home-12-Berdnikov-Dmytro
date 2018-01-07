@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.scale {
+    transform: scale(1);
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+}

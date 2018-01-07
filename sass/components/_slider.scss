@@ -1,0 +1,27 @@
+.slider-control {
+    clear: both;
+    height: 4px;
+    background-color: #e9e9e9;
+    font-size: 0;
+
+    &::after {
+        content: '';
+        display: block;
+        margin-left: 22px;
+        width: 168px;
+        height: 4px;
+        background-color: $secondary-color;
+    }
+}
+
+.promotional-part {
+    .slider-control {
+        height: 3px;
+
+        &::after {
+            width: 75%;
+            height: 3px;
+            margin: 0;
+        }
+    }
+}

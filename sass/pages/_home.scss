@@ -1,0 +1,242 @@
+.members {
+    padding-bottom: 99px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 97px;
+
+    .members-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 370px / $content-main-width * 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        a:hover {
+            .social {
+                display: block;
+            }
+        }
+    }
+
+    .member-info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 17px 27px 24px;
+        background-color: $secondary-color;
+        color: $main-color;
+
+        h5 {
+            margin: 0 0 7px;
+            font-size: 22px;
+            font-family: $secondary-font-face;
+        }
+
+        span {
+            font-size: 16px;
+            font-family: $main-font-face;
+        }
+    }
+}
+
+.upcoming-concert {
+    float: left;
+    width: $left-section-width;
+
+    .section-heading {
+        margin-bottom: 41px;
+    }
+
+    .left-side {
+        max-width: 270px;
+        float: left;
+    }
+
+    .right-side {
+        box-sizing: border-box;
+        padding: 23px 79px 35px;
+        float: left;
+
+        h5 {
+            margin: 0 0 29px;
+            font-family: $secondary-font-face;
+            color: $third-color;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+}
+
+.latest-videos {
+    float: right;
+    width: $right-section-width;
+
+    iframe {
+        width: 100%;
+        height: 290px;
+        border: none;
+    }
+}
+
+.our-founder {
+    clear: both;
+    position: relative;
+    background-color: $third-color;
+    color: $main-color;
+    margin: 99px 0 104px;
+
+    img {
+        float: right;
+    }
+
+    .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 86px 101px 0;
+
+        h2 {
+            font-family: $secondary-font-face;
+            font-size: 32px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        p {
+            font-family: $main-font-face;
+            font-size: 22px;
+            max-width: 556px;
+            margin: 0 0 47px;
+
+            span {
+                font-family: $third-font-face;
+                font-size: 65px;
+            }
+        }
+    }
+}
+
+.popular-songs {
+    float: left;
+    width: $left-section-width;
+
+    iframe {
+        border: none;
+        width: 100%;
+        height: 166px;
+        margin: 33px 0 59px;
+    }
+
+    .song-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 160px;
+
+        li {
+            max-width: 199px;
+            min-height: 38px;
+            line-height: 38px;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+
+            a {
+                display: inline-block;
+                width: 100%;
+                font-size: 16px;
+                line-height: 1;
+                font-family: $main-font-face;
+                text-decoration: none;
+                color: $third-color;
+            }
+        }
+    }
+}
+
+.instagram-feed {
+    float: right;
+    width: $right-section-width;
+
+    ul {
+        margin: 8px 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+            max-width: 170px;
+            max-height: 169px;
+            margin-top: 31px;
+
+            a {
+                display: block;
+            }
+        }
+    }
+}
+
+.downloads {
+    background-image: url('../img/downloads-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0 120px;
+    margin-top: 85px;
+    color: $main-color;
+    text-align: center;
+
+    h2 {
+        font-family: $secondary-font-face;
+        font-size: 32px;
+        font-weight: 500;
+        margin: 0 0 15px;
+    }
+
+    p {
+        font-family: $main-font-face;
+        font-size: 22px;
+        margin: 0 0 41px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+
+        li {
+            float: left;
+            margin-right: 14px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            a {
+                display: block;
+            }
+        }
+    }
+}
+
+.subscription {
+    padding: 105px 0 70px;
+}

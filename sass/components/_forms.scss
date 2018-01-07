@@ -1,0 +1,42 @@
+.subscribe-form {
+    max-width: $max-form-width;
+    width: 100%;
+    border-bottom: 4px solid #999999;
+    margin: 0 auto;
+    padding-bottom: 19px;
+
+    input[type='email'], button[type='submit'] {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: none;
+    }
+
+    input[type='email'] {
+        float: left;
+        width: ($max-form-width - 20px) / $max-form-width * 100%;
+        color: #282828;
+        font-family: $main-font-face;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 3.2px;
+    }
+
+    button[type='submit'] {
+        float: right;
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        margin-top: 2px;
+        padding: 0;
+
+        &::before {
+            display: block;
+            font-size: 16px;
+            color: $secondary-color;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

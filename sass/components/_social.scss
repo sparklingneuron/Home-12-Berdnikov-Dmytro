@@ -1,0 +1,45 @@
+.social {
+    margin: 0 56px 0 0;
+
+    dt {
+        display: inline-block;
+        margin-right: 6px;
+        vertical-align: middle;
+
+        &::before {
+            font-size: 24px;
+            color: $main-color;
+        }
+    }
+
+    dd {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 42px 0 0;
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+
+.members {
+    .social {
+        margin-top: 25px;
+        display: none;
+
+        dt {
+            margin-right: 4px;
+            vertical-align: bottom;
+        }
+
+        dd {
+            margin-right: 18px;
+            vertical-align: bottom;
+        }
+    }
+}
